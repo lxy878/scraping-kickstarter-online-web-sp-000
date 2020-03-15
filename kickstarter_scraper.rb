@@ -8,7 +8,7 @@ def create_project_hash
   doc = Nokogiri::HTML(html)
   projects = doc.css("li.project.grid_4").first
 
-  binding.pry
+  # binding.pry
   hash = {}
 
 
