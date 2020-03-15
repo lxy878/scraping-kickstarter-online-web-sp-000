@@ -12,13 +12,12 @@ def create_project_hash
   # :image_link => kickstarter.css("div.project-thumbnail a img").attribute("src").value
   # :description => kickstarter.css("p.bbcard_blurb").text.strip
   # :location => kickstarter.css("ul.project-meta span.location-name").text
-  # :percent_funded => 
-  binding.pry
-  # projects = {}
-  # kickstarter.each do |project|
-  #   project
-  # end
-  # projects
+  # :percent_funded => kickstarter.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i
+  projects = {}
+  kickstarter.each do |project|
+    project
+  end
+  projects
 end
 
 puts create_project_hash
