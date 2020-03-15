@@ -14,3 +14,5 @@ def create_project_hash
 
   hash
 end
+
+create_project_hash
