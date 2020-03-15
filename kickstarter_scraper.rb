@@ -15,7 +15,8 @@ def create_project_hash
   # :percent_funded => kickstarter.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i
   projects = {}
   kickstarter.each do |project|
-    project
+    title = project.css("h2.bbcard_name strong a").text
+    projects[title]
   end
   projects
 end
