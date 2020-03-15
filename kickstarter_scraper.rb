@@ -9,10 +9,10 @@ def create_project_hash
   projects = doc.css("li.project.grid_4").first
 
   # binding.pry
-  hash = {}
-
-
-  hash
+  # hash = {}
+  #
+  #
+  # hash
 end
 
 puts create_project_hash
