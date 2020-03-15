@@ -16,7 +16,7 @@ def create_project_hash
   projects = {}
   kickstarter.each do |project|
     title = project.css("h2.bbcard_name strong a").text
-    projects[title]
+    projects[title.to_sym]
   end
   projects
 end
