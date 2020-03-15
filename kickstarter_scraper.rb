@@ -11,8 +11,8 @@ def create_project_hash
   # title = kickstarter.css("h2.bbcard_name strong a").text
   # :image_link => kickstarter.css("div.project-thumbnail a img").attribute("src").value
   # :description => kickstarter.css("p.bbcard_blurb").text.strip
-  # :location => "Location",
-  # :percent_funded => "Percent Funded"
+  # :location => kickstarter.css("ul.project-meta span.location-name").text
+  # :percent_funded => 
   binding.pry
   # projects = {}
   # kickstarter.each do |project|
